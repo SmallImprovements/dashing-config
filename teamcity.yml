@@ -1,0 +1,6 @@
+api_url: "http://teamcity:8111/httpAuth/app/rest/"
+http_user: "dashing"
+http_password: "YaZYermVCso2"
+repositories:
+  template-data-praisemanager_backend: praisemanager_backend
+  template-data-praisemanager_frontend: praisemanager_frontend
