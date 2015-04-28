@@ -1,4 +1,3 @@
 api_url: "http://teamcity:8111/guestAuth/app/rest/"
 repositories:
-  template-data-praisemanager_backend: praisemanager_backend
-  template-data-praisemanager_frontend: praisemanager_frontend
+  template-data-praisemanager_backend: praisemanager
