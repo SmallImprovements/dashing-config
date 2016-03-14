@@ -1,9 +1,16 @@
 <% content_for(:title) { "Small Improvements Super Sweet Dashboard" } %>
 <script>
 $(function() {
-  Dashing.numColumns = 3;
-  Dashing.numRows = 2;
-  Dashing.widget_base_dimensions = [(1920 - 10 * (1 + Dashing.numColumns)) / Dashing.numColumns - 10, (1080 - 10 * (1 + Dashing.numRows)) / Dashing.numRows - 8];
+  var 
+    cols = 3, 
+    rows = 1;
+    
+  Dashing.numColumns = cols;
+  Dashing.numRows = rows;
+  Dashing.widget_base_dimensions = [
+    (1920 - 10 * (1 + cols)) / cols - 10, 
+    (1080 - 10 * (1 + rows)) / rows - 8
+  ];
 });
 </script>
 <div class="gridster">
