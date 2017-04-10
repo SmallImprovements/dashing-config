@@ -1,29 +1,35 @@
-<% content_for(:title) { "Small Improvements Super Sweet Dashboard" } %>
+<% content_for(:title) { "Team Techno - Dashboard" } %>
 <script>
-$(function() {
-  var cols = 3; 
-  var rows = 1;
-    
-  Dashing.numColumns = cols;
-  Dashing.numRows = rows;
-  Dashing.widget_base_dimensions = [
-    (1920 - 10 * (1 + cols)) / cols - 10, 
-    (1080 - 10 * (1 + rows)) / rows - 8
-  ];
-});
+    $(function () {
+        var cols = 3;
+        var rows = 1;
+
+        Dashing.numColumns = cols;
+        Dashing.numRows = rows;
+        Dashing.widget_base_dimensions = [
+            (1920 - 10 * (1 + cols)) / cols - 10,
+            (1080 - 10 * (1 + rows)) / rows - 8
+        ];
+    });
 </script>
 <div class="gridster">
-    <ul>
-        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <div data-id="template-data-praisemanager_backend"
-                 data-view="TeamCity" data-unordered="true" data-title="Build-O-Mat">
-            </div>
-        </li>
-        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-            <div data-id="iframeId2" 
-                 data-view="Iframe" 
-                 data-url="https://teamtechno.kolja.io">
-            </div>
-        </li>
-    </ul>
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iframeId1"
+           data-view="Iframe"
+           data-url="https://opensource.small-improvements.com/dashboards/team-techno.html?p=<%= params['p'] %>">
+      </div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="template-data-praisemanager_backend"
+           data-view="TeamCity" data-unordered="true" data-title="Build-O-Mat">
+      </div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iframeId2"
+           data-view="Iframe"
+           data-url="https://teamtechno.kolja.io">
+      </div>
+    </li>
+  </ul>
 </div>
